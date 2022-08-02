@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Studocu Paywall Remover",
+  "version": "1.0",
+
+  "description": "Removes paywall from studocu and lets user access the documents.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.studocu.com/*"],
+      "js": ["remove-basic-paywall.js"]
+    }
+  ]
+
+}
+
